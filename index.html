@@ -43,7 +43,7 @@
       }
 
       .overlay {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.576);
       }
 
       #slide1 {
@@ -63,6 +63,12 @@
       }
       #slide4 {
         background: url("images/banner4.png");
+        background-position: center;
+        background-size: cover;
+      }
+
+      .team {
+        background: url("images/team.png");
         background-position: center;
         background-size: cover;
       }
@@ -328,7 +334,7 @@
       </section>
 
       <!-- food price section -->
-      <section>
+      <section class="text-center space-y-12">
         <!-- card container -->
         <div
           class="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-evenly"
@@ -954,7 +960,79 @@
             </div>
           </div>
         </div>
+
+        <button class="btn bg-primary text-white text-center rounded-md">
+          Shop All
+        </button>
       </section>
+
+      <!-- team section -->
+      <div class="team lg:my-32 rounded-lg">
+        <section
+          class="text-center text-white overlay lg:py-32 lg:px-[14rem] rounded-lg"
+        >
+          <h3 class="text-5xl font-extrabold mb-6">Meet the team section</h3>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+
+          <!-- card container -->
+          <div
+            class="mt-12 flex flex-col lg:flex-row items-center justify-between"
+          >
+            <!-- card1 -->
+            <div class="space-y-2 flex flex-col items-center cursor-pointer">
+              <img src="images/member1.png" alt="" />
+              <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+              <p>Fruits Expert</p>
+              <!-- social icons -->
+              <div class="grid grid-cols-3 gap-4">
+                <img src="images/icons/pink-fb.png" alt="" />
+                <img src="images/icons/pink-in.png" alt="" />
+                <img src="images/icons/pink-twitter.png" alt="" />
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="space-y-2 flex flex-col items-center cursor-pointer">
+              <img src="images/member2.png" alt="" />
+              <h3 class="text-2xl font-bold">Safia Chowdhury</h3>
+              <p>Fruits Expert</p>
+              <!-- social icons -->
+              <div class="grid grid-cols-3 gap-4">
+                <img src="images/icons/pink-fb.png" alt="" />
+                <img src="images/icons/pink-in.png" alt="" />
+                <img src="images/icons/pink-twitter.png" alt="" />
+              </div>
+            </div>
+            <!-- card3 -->
+            <div class="space-y-2 flex flex-col items-center cursor-pointer">
+              <img src="images/member3.png" alt="" />
+              <h3 class="text-2xl font-bold">Rokib Hossain</h3>
+              <p>Fruits Expert</p>
+              <!-- social icons -->
+              <div class="grid grid-cols-3 gap-4">
+                <img src="images/icons/pink-fb.png" alt="" />
+                <img src="images/icons/pink-in.png" alt="" />
+                <img src="images/icons/pink-twitter.png" alt="" />
+              </div>
+            </div>
+            <!-- card4 -->
+            <div class="space-y-2 flex flex-col items-center cursor-pointer">
+              <img src="images/member4.png" alt="" />
+              <h3 class="text-2xl font-bold">Chaity</h3>
+              <p>Fruits Expert</p>
+              <!-- social icons -->
+              <div class="grid grid-cols-3 gap-4">
+                <img src="images/icons/pink-fb.png" alt="" />
+                <img src="images/icons/pink-in.png" alt="" />
+                <img src="images/icons/pink-twitter.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- footer section -->
