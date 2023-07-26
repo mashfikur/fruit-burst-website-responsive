@@ -72,6 +72,10 @@
         background-position: center;
         background-size: cover;
       }
+
+      summary::after{
+        display: none !important;
+      }
     </style>
   </head>
   <body class="font-lato">
@@ -79,7 +83,7 @@
     <!-- header seciton -->
     <header class="custom-container mx-auto relative">
       <nav
-        class="md:bg-[#F85559] my-8 md:my-0 lg:my-12 md:px-12 lg:py-4 lg:rounded-full"
+        class="md:bg-[#F85559] my-8 hidden md:block md:my-0 lg:my-12 md:px-12 lg:py-4 lg:rounded-full"
       >
         <div class="navbar">
           <!-- start -->
@@ -139,6 +143,41 @@
           </div>
         </div>
       </nav>
+
+      <!-- mobile navbar -->
+      <div class="md:hidden px-2">
+        <div class="navbar bg-base-100 relative flex justify-between z-40">
+
+
+          <div class="flex items-center gap-2">
+            <img class="w-[20%]" src="images/logo.png" alt="">
+            <p class="text-2xl font-bold">Fruit Burst</p>
+          </div>
+
+
+          <div>
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <details>
+                  <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    
+                  </summary>
+                  <ul class="p-2 space-y-4">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                    <li class="flex">Search<ion-icon name="search-outline"></ion-icon> </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <!-- banner section -->
       <section class="p-2 relative z-10">
